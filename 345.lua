@@ -1,14 +1,4 @@
-local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/whitelist.lua", true))()
 
-if not whitelist[game.Players.LocalPlayer.Name] then
-    game.Players.LocalPlayer:Kick("验证失败")
-    return
-end
-game.StarterGui:SetCore("SendNotification", {
-    Title = "验证成功",
-    Text = "66",
-    Duration = 5
-})
 
 
 
