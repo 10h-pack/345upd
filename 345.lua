@@ -30,18 +30,7 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wdwahDWGU/DWAHUBUHD/refs/heads/main/UEWJIQBW"))()
 end
-})   
-local Tab = Window:MakeTab({
-    Name = "云脚本",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
 })
-Tab:AddButton({
-	Name = "1",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/VIP/main/%E4%BA%91%E8%84%9A%E6%9C%AC/UNIVERSAL%20VERSION.LUA", true))()
-end
-})   
 local Tab = Window:MakeTab({
     Name = "通用",
 	Icon = "rbxassetid://4483345998",
@@ -212,3 +201,26 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/Script/main/Tools/DarkDexV3.lua", true))()
 end
 })    
+Tab:AddButton({
+	Name = "spy1",
+	Callback = function()
+getgenv().Spy="汉化Spy" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/refs/heads/main/spy%E6%B1%89%E5%8C%96%20(1).txt"))()
+end
+})    
+Tab:AddButton({
+	Name = "",
+	Callback = function()
+脚本
+end
+})    
+Tab:AddButton({
+	Name = "spy2",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/jsnwusiwksbsu/main/spy')))()
+end
+})    
+local Tab = Window:MakeTab({
+    Name = "未做....",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
