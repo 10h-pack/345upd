@@ -189,3 +189,26 @@ Tab:AddToggle({
 
 	end	
 })
+Tab:AddButton({
+	Name = "IY",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end
+})    
+local Tab = Window:MakeTab({
+    Name = "dex和spy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "dex1",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end
+})    
+Tab:AddButton({
+	Name = "dex2",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/Script/main/Tools/DarkDexV3.lua", true))()
+end
+})    
