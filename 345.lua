@@ -184,6 +184,30 @@ Tab:AddButton({
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end
 })    
+Tab:AddButton({
+	Name = "旋转50",
+	Callback = function()
+local speed = 50
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+end
+})    
+Tab:AddButton({
+	Name = "功能名",
+	Callback = function()
+脚本
+end
+})    
 
 
 local Tab = Window:MakeTab({
@@ -217,7 +241,31 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/jsnwusiwks
 end
 })    
 local Tab = Window:MakeTab({
-    Name = "",
+    Name = "doors",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Tab:AddButton({
+	Name = "生成rush",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Custom-Entity-S*er-V2-21705"))()
+end
+})    
+Tab:AddButton({
+	Name = "mspaintXK汉化",
+	Callback = function()
+getgenv().Spy="mspaint" loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/XKscript/refs/heads/main/DOORS.txt"))()
+end
+})    
+Tab:AddButton({
+	Name = "十字架",
+	Callback = function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/FCSyG6Th"))()
+end
+})   
+Tab:AddButton({
+	Name = "夜视仪",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/4Vsv1Xwn"))()
+end
+})    
