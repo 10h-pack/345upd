@@ -201,13 +201,7 @@ velocity.Parent = humRoot
 velocity.Name = "Spinbot"
     end)
 end
-})    
-Tab:AddButton({
-	Name = "功能名",
-	Callback = function()
-脚本
-end
-})    
+})     
 
 
 local Tab = Window:MakeTab({
