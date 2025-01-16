@@ -1,17 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
 local Window = OrionLib:MakeWindow({Name = "6", HidePremium = false, SaveConfig = true,IntroText = "loading", ConfigFolder = "4646646"})
 local Tab = Window:MakeTab({
@@ -307,25 +294,33 @@ Tab:AddButton({
 	Name = "A",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2293.44336, 21.3265343, 1058.2572, -0.015537858, 0.999517143, 0.0269091763, -0.995784104, -0.0130354166, -0.0907967985, -0.0904021859, -0.0282065235, 0.99550581)
---A点传送
+-
 })    
 	Tab:AddButton({
 	Name = "B",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1337.44312, 10.4819765, -1061.43372, 4.36306e-05, 0.99959904, 0.0283192005, -1.00000012, 4.36306e-05, 6.1839819e-07, -6.1839819e-07, -0.0283192005, 0.99959892)
---B点传送
+
 end
 })    
 	Tab:AddButton({
 	Name = "C",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-154.356369, -38.6096306, 523.15979, 5.8889389e-05, 0.999629557, 0.0272208191, -1.00000012, 5.8889389e-05, 8.01868737e-07, -8.01868737e-07, -0.0272208191, 0.999629438)
---C点传送
+-
 end	
 })   
 Tab:AddButton({
-	Name = "自瞄",
+	Name = "D",
 	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()
-	end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1259.6543, 74.3424225, -1028.86328, 5.8889389e-05, 0.999629557, 0.0272208191, -1.00000012, 5.8889389e-05, 8.01868737e-07, -8.01868737e-07, -0.0272208191, 0.999629438)
+
+end
+})  
+	Tab:AddButton({
+	Name = "E",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2613.46143, -16.5042343, 447.08844, -6.04391098e-05, 0.999631047, 0.0271597952, -1, -5.87701797e-05, -6.18426129e-05, -6.02221116e-05, -0.0271597989, 0.999631107)
+
+end
 })    
