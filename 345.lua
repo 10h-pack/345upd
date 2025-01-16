@@ -13,7 +13,7 @@
 
 
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
-local Window = OrionLib:MakeWindow({Name = "345555555555", HidePremium = false, SaveConfig = true,IntroText = "345", ConfigFolder = "4646646"})
+local Window = OrionLib:MakeWindow({Name = "*启动器*", HidePremium = false, SaveConfig = true,IntroText = "启动中", ConfigFolder = "4646646"})
 local Tab = Window:MakeTab({
     Name = "blair",
 	Icon = "rbxassetid://4483345998",
@@ -184,6 +184,8 @@ Tab:AddButton({
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end
 })    
+
+
 local Tab = Window:MakeTab({
     Name = "dex和spy",
 	Icon = "rbxassetid://4483345998",
@@ -204,13 +206,8 @@ end
 Tab:AddButton({
 	Name = "spy1",
 	Callback = function()
-getgenv().Spy="汉化Spy" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/refs/heads/main/spy%E6%B1%89%E5%8C%96%20(1).txt"))()
-end
-})    
-Tab:AddButton({
-	Name = "",
-	Callback = function()
-脚本
+getgenv().Spy="汉化Spy"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/refs/heads/main/spy%E6%B1%89%E5%8C%96%20(1).txt"))()
 end
 })    
 Tab:AddButton({
@@ -220,7 +217,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/jsnwusiwks
 end
 })    
 local Tab = Window:MakeTab({
-    Name = "未做....",
+    Name = "",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
