@@ -13,7 +13,7 @@
 
 
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
-local Window = OrionLib:MakeWindow({Name = "启动器", HidePremium = false, SaveConfig = true,IntroText = "启动中", ConfigFolder = "4646646"})
+local Window = OrionLib:MakeWindow({Name = "6", HidePremium = false, SaveConfig = true,IntroText = "loading", ConfigFolder = "4646646"})
 local Tab = Window:MakeTab({
     Name = "blair",
 	Icon = "rbxassetid://4483345998",
@@ -184,25 +184,7 @@ Tab:AddButton({
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end
 })    
-Tab:AddButton({
-	Name = "旋转50",
-	Callback = function()
-local speed = 50
-
-local plr = game:GetService("Players").LocalPlayer
-repeat task.wait() until plr.Character
-local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
-plr.Character:WaitForChild("Humanoid").AutoRotate = false
-local velocity = Instance.new("AngularVelocity")
-velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
-velocity.MaxTorque = math.huge
-velocity.AngularVelocity = Vector3.new(0, speed, 0)
-velocity.Parent = humRoot
-velocity.Name = "Spinbot"
-    end)
-end
-})     
-
+ 
 
 local Tab = Window:MakeTab({
     Name = "dex和spy",
