@@ -21,8 +21,7 @@ if isLocalPlayerWhitelisted then
         Text = "玩家:"..localPlayer.Name.."，检测完毕白名单玩家，稍后会加载脚本",
         Duration = 7,
     })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/345.lua,true"))()
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/345.lua"))()    
 else
     localPlayer:Kick("bro")
 end
