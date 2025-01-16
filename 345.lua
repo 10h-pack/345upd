@@ -298,3 +298,14 @@ end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
 end
 })    
+local Tab = Window:MakeTab({
+    Name = "SBC",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "SBC(10h_pack制作)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/SBC.lua"))()
+end
+})    
