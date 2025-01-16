@@ -13,7 +13,7 @@
 
 
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
-local Window = OrionLib:MakeWindow({Name = "*启动器*", HidePremium = false, SaveConfig = true,IntroText = "启动中", ConfigFolder = "4646646"})
+local Window = OrionLib:MakeWindow({Name = "启动器", HidePremium = false, SaveConfig = true,IntroText = "启动中", ConfigFolder = "4646646"})
 local Tab = Window:MakeTab({
     Name = "blair",
 	Icon = "rbxassetid://4483345998",
