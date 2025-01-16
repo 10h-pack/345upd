@@ -20,13 +20,13 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "外国恐鬼症",
+	Name = "1",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MythHubOfficial/Blair/refs/heads/main/MYTHONTOP'))()
 end
 })   
 Tab:AddButton({
-	Name = "国内恐鬼",
+	Name = "2汉化",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wdwahDWGU/DWAHUBUHD/refs/heads/main/UEWJIQBW"))()
 end
