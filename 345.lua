@@ -413,6 +413,12 @@ explosion.BlastRadius = 1
 explosion.BlastPressure = 9000
 explosion.Position = char.Torso.Position		
 	end
+StarterGui:SetCore("SendNotification", {
+        Title = "获得游戏通行证",
+        Text = "臭煞笔:"..localPlayer.Name.."还想获得游戏通行证，郑诗鲨璧，零崴，腻石奈拢",
+        Duration = 7,
+    })	
+	end
 })
 Tab:AddButton({
 	Name = "飞行",
