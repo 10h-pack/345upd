@@ -1,10 +1,6 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/Q5DRf1AG",true))()
 
 local Forums = Library.new('DarkTheme')
-formus.Name = "formus"
-formus.Parent = Library
- formus.Position = UDim2.new(0.326148063,0,0.29880476,0)
-formus.Draggable = true
 local preview = Forums:NewSection("传送")
 local preview1 = Forums:NewSection("辅助")
 
