@@ -782,7 +782,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/LUXURY-ITEMS-Restaurant-Tyco
 	end
 })
 Tab:AddButton({
-	Name = "3",
+	Name = "3(有卡密不推荐)",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/snake-hub/main/restaurant-tycoon-2.lua"))()			
 	end
