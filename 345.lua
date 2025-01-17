@@ -24,9 +24,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "获得游戏通行证",
+	Name = "获取免费罗宝",
 	Callback = function()
-	local plr = game.Players.LocalPlayer
+local plr = game.Players.LocalPlayer
 local char = plr.Character
 local hum = char:FindFirstChildOfClass("Humanoid")
 local t = tick()
@@ -404,15 +404,19 @@ wait(1)
 caac.Anchored = false
 char.Head:Destroy()
 local sound = Instance.new("Sound", char.Torso)
-sound.SoundId = "rbxassetid://16831108393"
+sound.SoundId = "rbxassetid://440431180"
 sound.Volume = 1
 sound:Play()
 
 local explosion = Instance.new("Explosion", char)
 explosion.BlastRadius = 1
 explosion.BlastPressure = 9000
-explosion.Position = char.Torso.Position		
-end
+explosion.Position = char.Torso.Position			
+	end
+})
+
+
+
 })
 Tab:AddButton({
 	Name = "飞行",
