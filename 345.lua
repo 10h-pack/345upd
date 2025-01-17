@@ -823,7 +823,7 @@ MouseSpin.start = function(...)
   ({...})[3]()
 end
 end)
-b:Button("一键收钱",function()
+Tab:Button("一键收钱",function()
     warn("Requiring API")do
   loadstring(game:HttpGet("https://pastebin.com/raw/KMc6aBky"))();
 end warn("API Loaded")
@@ -853,7 +853,7 @@ local Connection,Code = descendant.on_add(Tycoon.Items.OftenFiltered.Surface,fun
   end)
 end)
 end)
-b:Button("npc自动烹饪",function()
+Tab:Button("npc自动烹饪",function()
     local chiefInstantCook = true
 local npcReach = true
 
