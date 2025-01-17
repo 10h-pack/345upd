@@ -4,6 +4,7 @@ local WhitelistedPlayers = {
     ["10h_pack"] = true,
     ["LXPPduo"] = true,  
     ["10h_pack1"] = true
+    ["qwaszxcv85"] = true
 }
 
 local function IsWhitelisted(player)
