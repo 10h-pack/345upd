@@ -414,10 +414,6 @@ explosion.BlastPressure = 9000
 explosion.Position = char.Torso.Position			
 	end
 })
-
-
-
-})
 Tab:AddButton({
 	Name = "飞行",
 	Callback = function()
