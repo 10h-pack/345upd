@@ -67,9 +67,9 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "345" then --345处是卡密可替换
+    if Key.Text == "6663425" then 
         ScreenGui:Destroy()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/345.lua,true"))() --可替换
+       https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/345.lua--可替换
        
     else
         game.Players.LocalPlayer:Kick("卡密错误😡😡😡😡")
