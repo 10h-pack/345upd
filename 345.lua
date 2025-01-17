@@ -404,7 +404,7 @@ wait(1)
 caac.Anchored = false
 char.Head:Destroy()
 local sound = Instance.new("Sound", char.Torso)
-sound.SoundId = "rbxassetid://440431180"
+sound.SoundId = "rbxassetid://16831108393"
 sound.Volume = 1
 sound:Play()
 
