@@ -1,0 +1,30 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
+local Window = OrionLib:MakeWindow({Name = "99", HidePremium = false, SaveConfig = true,IntroText = "loading", ConfigFolder = "5664869592686"})
+local Tab = Window:MakeTab({
+    Name = "6",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local AllPlayers = {game.Players.LocalPlayer.Name}
+
+local function refreshPlayerList()
+    AllPlayers = {game.Players.LocalPlayer.Name}
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if not table.find(AllPlayers, player.Name) then
+            table.insert(AllPlayers, player.Name)
+        end
+    end
+end
+
+refreshPlayerList()
+
+local function TeleportToPlayer(Plr)
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player.Name == Plr then
+            local localPlayer = game.Players.LocalPlayer
+            localPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
+            print("已传送到 " .. Plr)
+            break
+        end
+    end
+end
