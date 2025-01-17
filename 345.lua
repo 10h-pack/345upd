@@ -372,3 +372,35 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2613.461
 
 end
 })   
+Tab:AddToggle({
+	Name = "穿墙",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+Tab:AddButton({
+	Name = "子弹追踪",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()
+end
+})    
