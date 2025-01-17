@@ -466,7 +466,7 @@ Tab:AddToggle({
 
 
 Tab:AddToggle({
-	Name = "SEEK穿墙",
+	Name = "穿墙",
 	Default = false,
 	Callback = function(Value)
 		if Value then
