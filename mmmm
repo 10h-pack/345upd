@@ -5,6 +5,9 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Tab:AddButton({
+	Name = "6",
+	Callback = function()
 local AllPlayers = {game.Players.LocalPlayer.Name}
 
 local function refreshPlayerList()
@@ -27,4 +30,6 @@ local function TeleportToPlayer(Plr)
             break
         end
     end
-end
+end			
+	end
+})
