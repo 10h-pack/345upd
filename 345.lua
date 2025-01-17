@@ -323,4 +323,7 @@ end
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2613.46143, -16.5042343, 447.08844, -6.04391098e-05, 0.999631047, 0.0271597952, -1, -5.87701797e-05, -6.18426129e-05, -6.02221116e-05, -0.0271597989, 0.999631107)
 
 end
-})    
+})   
+General:Toggle("穿墙(可用)", "NoClip", false, function(NC)
+  local Workspace = game:GetService("Workspace") local Players = game:GetService("Players") if NC then Clipon = true else Clipon = false end Stepped = game:GetService("RunService").Stepped:Connect(function() if not Clipon == false then for a, b in pairs(Workspace:GetChildren()) do if b.Name == Players.LocalPlayer.Name then for i, v in pairs(Workspace[Players.LocalPlayer.Name]:GetChildren()) do if v:IsA("BasePart") then v.CanCollide = false end end end end else Stepped:Disconnect() end end)
+end)
