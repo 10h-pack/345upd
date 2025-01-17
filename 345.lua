@@ -172,6 +172,54 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 end
 })    
+Tab:AddButton({
+	Name = "透视",
+	Callback = function()
+	local Players = game:GetService("Players"):GetChildren()
+local RunService = game:GetService("RunService")
+local highlight = Instance.new("Highlight")
+highlight.Name = "Highlight"
+
+for i, v in pairs(Players) do
+    repeat wait() until v.Character
+    if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+        local highlightClone = highlight:Clone()
+        highlightClone.Adornee = v.Character
+        highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
+        highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+        highlightClone.Name = "Highlight"
+    end
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    repeat wait() until player.Character
+    if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+        local highlightClone = highlight:Clone()
+        highlightClone.Adornee = player.Character
+        highlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+        highlightClone.Name = "Highlight"
+    end
+end)
+
+game.Players.PlayerRemoving:Connect(function(playerRemoved)
+    playerRemoved.Character:FindFirstChild("HumanoidRootPart").Highlight:Destroy()
+end)
+
+RunService.Heartbeat:Connect(function()
+    for i, v in pairs(Players) do
+        repeat wait() until v.Character
+        if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+            local highlightClone = highlight:Clone()
+            highlightClone.Adornee = v.Character
+            highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
+            highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            highlightClone.Name = "Highlight"
+            task.wait()
+        end
+end
+end)
+	end 
+})
 
 
 
@@ -324,29 +372,3 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2613.461
 
 end
 })   
-Tab:AddToggle({
-	Name = "穿墙",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    Noclip = true
-		    Stepped = game.RunService.Stepped:Connect(function()
-			    if Noclip == true then
-				    for a, b in pairs(game.Workspace:GetChildren()) do
-                        if b.Name == game.Players.LocalPlayer.Name then
-                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-                                if v:IsA("BasePart") then
-                                    v.CanCollide = false
-                                end
-                            end
-                        end
-                    end
-			    else
-				    Stepped:Disconnect()
-			    end
-		    end)
-	    else
-		    Noclip = false
-	    end
-	end
-})
