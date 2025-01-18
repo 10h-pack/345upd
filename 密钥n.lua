@@ -136,6 +136,12 @@ ScreenGui:Destroy()
 
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
 local Window = OrionLib:MakeWindow({Name = "6", HidePremium = false, SaveConfig = true,IntroText = "loading", ConfigFolder = "4646646"})
+local about = Window:MakeTab({
+    Name = "6脚本",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+about:AddParagraph("小白&柳絮联合制作")			
 local Tab = Window:MakeTab({
     Name = "blair",
 	Icon = "rbxassetid://4483345998",
@@ -842,12 +848,48 @@ loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116
 loadstring(game:HttpGet("https://pastebin.com/raw/Lyy77rnr",true))()
 end
 })    
-			Tab:AddButton({
-	Name = "传送到终点处",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-83.6921997, -350.513977, 9458.40039, 0.483011603, -0.258813173, -0.836490035, -0.865993857, 2.22921371e-05, -0.500054777, 0.129439473, 0.965927422, -0.224119902)			
-	end
-})
+Tab:AddToggle({
+    Name = "刷钱2(自做,柳絮制作,小白修复)",
+    Default = false,
+    Callback = function(Value)
+while Value do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+--1号门
+task.wait(0.5)--间隔0.5秒    
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)    
+--2号门
+task.wait(0.5)--间隔0.5秒
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+--3号门
+    task.wait(0.5)--间隔0.5秒
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --4号门  
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --5号门
+  task.wait(0.5)--一样(下面这种一样的没有注释)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --6号门
+  task.wait(0.5)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --7号门
+  task.wait(0.5)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --8号门
+  task.wait(0.5)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --9号门
+  task.wait(0.5)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --10号门
+  task.wait(0.5)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+  --11号门
+task.wait(0.7)							
+  game.Players.LocalPlayer.Character.Humanoid.Health=0
+  task.wait(5)
+end
+end})			
+			
 		local Tab = Window:MakeTab({
     Name = "evade",
 	Icon = "rbxassetid://4483345998",
