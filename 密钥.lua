@@ -82,11 +82,13 @@ Start.TextWrapped = true
 Start.MouseButton1Click:Connect(function()
     if Key.Text == "这里是密码" then
         ScreenGui:Destroy()
-        -- 这里是你的脚本
+       
+loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/heads/main/345.lua"))() 
     else
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "密钥错误",
             Text = "玩家:"..localPlayer.Name.."滚出",
             Duration = 7,
         })
+  ScreenGui:Destroy()          
     end
