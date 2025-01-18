@@ -1,8 +1,8 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/VeaMSRZK')))()
 local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "卡密", HidePremium = false, SaveConfig = false, IntroEnabled = false})
 
-_G.Key = "345"--←密码
+_G.Key = "USNDYS645"--←密码
 _G.KeyInput = "string"
 
 local Tab = Window:MakeTab({
@@ -40,7 +40,7 @@ Tab:AddButton({
                     Content = "密钥错误!",
                     Image = "rbxassetid://4483345998",
                     Time = 5
-                    game.Players.LocalPlayer:Kick("卡密错了")
+                
                 })
         end
   	end    
