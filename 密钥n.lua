@@ -842,6 +842,12 @@ loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116
 loadstring(game:HttpGet("https://pastebin.com/raw/Lyy77rnr",true))()
 end
 })    
+			Tab:AddButton({
+	Name = "传送到终点处",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-83.6921997, -350.513977, 9458.40039, 0.483011603, -0.258813173, -0.836490035, -0.865993857, 2.22921371e-05, -0.500054777, 0.129439473, 0.965927422, -0.224119902)			
+	end
+})
 		local Tab = Window:MakeTab({
     Name = "evade",
 	Icon = "rbxassetid://4483345998",
@@ -1050,5 +1056,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Lu
 })
 else
 ScreenGui:Destroy()
+StarterGui:SetCore("SendNotification", {
+        Title = "密钥错误",
+        Text = "玩家:"..localPlayer.Name.."臭煞笔,腻石补诗奈隆",
+        Duration = 7,
+    })			
     end
 end)
