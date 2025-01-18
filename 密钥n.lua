@@ -141,7 +141,12 @@ local about = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-about:AddParagraph("小白&柳絮联合制作")			
+about:AddParagraph("小白&柳絮联合制作")	
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("脚本为免费脚本，请勿拿去圈钱，圈钱的人我操你妈——小白")
+about:AddParagraph("此脚本是缝合脚本，永久更新，部分脚本为自做")
+about:AddParagraph("圈钱的人腻湿不湿愁奈拢,大庞茂,窝熙望腻遍乘哒旁冒——柳絮")			
 local Tab = Window:MakeTab({
     Name = "blair",
 	Icon = "rbxassetid://4483345998",
