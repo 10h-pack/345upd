@@ -137,4 +137,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/345upd/refs/
 
 else
 ScreenGui:Destroy()
+    end
 end)
