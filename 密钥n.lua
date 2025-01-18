@@ -1031,7 +1031,23 @@ Sword_Guest___V7 = "剑客QQ群155160100"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0neK/Hello/refs/heads/main/SG-V7"))()			
 	end
 })
-
+			local Tab = Window:MakeTab({
+    Name = "伐木大亨2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "白",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/noob616161/KphoooOooooOoOo-wprfbdksorbfKvsdcIUH-194jddJ-___-_-lIlIIIllIIIlllIIIIlIlIIlIllIIIllllllIllllllIIIl/main/bai/%E4%BC%90%E6%9C%A8"))()			
+	end
+})
+			Tab:AddButton({
+	Name = "luaware汉化",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()			
+	end
+})
 else
 ScreenGui:Destroy()
     end
