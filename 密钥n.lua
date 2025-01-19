@@ -1100,6 +1100,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/noob616161/KphoooOooo
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()			
 	end
+					
+})
+			local Tab = Window:MakeTab({
+    Name = "恶魔学",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+			Tab:AddButton({
+	Name = "1汉化"
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/wdwahDWGU/DWAHUBUHD/refs/heads/main/WDVHQVEH'))()		
+	end
 })
 else
 ScreenGui:Destroy()
