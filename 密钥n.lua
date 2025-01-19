@@ -134,7 +134,7 @@ if Key.Text == "USNDYS645" then
 ScreenGui:Destroy()
 
 
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/SePpsSPZ"))()
 local Window = OrionLib:MakeWindow({Name = "6", HidePremium = false, SaveConfig = true,IntroText = "loading", ConfigFolder = "4646646"})
 local about = Window:MakeTab({
     Name = "6脚本",
