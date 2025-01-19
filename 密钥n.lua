@@ -169,6 +169,13 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddButton({
+	Name = "复制当前坐标",
+	Callback = function()
+setclipboard(tostring(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame))			
+	end
+})			
 Tab:AddButton({
 	Name = "获取免费罗宝",
 	Callback = function()
