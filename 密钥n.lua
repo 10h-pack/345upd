@@ -177,7 +177,7 @@ local fov = 100 local smoothness = 10 local crosshairDistance = 5 local RunServi
 })
 			Tab:AddButton({
 				Name = "透视",
-	Callback = function()
+	               Callback = function()
 	local Players = game:GetService("Players"):GetChildren()
 local RunService = game:GetService("RunService")
 local highlight = Instance.new("Highlight")
@@ -223,13 +223,6 @@ end
 end)
 	end 
 })
-
-Tab:AddButton({
-	Name = "复制当前坐标",
-	Callback = function()
-setclipboard(tostring(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame))			
-	end
-})			
 Tab:AddButton({
 	Name = "获取免费罗宝",
 	Callback = function()
@@ -793,14 +786,6 @@ end
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()		
 	end
 })
-	local about = Window:MakeTab({
-    Name = "IY指令",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-	about:AddParagraph("noclip(穿墙)")
-about:AddParagraph("goto 玩家名(传送到玩家处)")
-about:AddParagraph("fly 速度(飞行)")
 
 local Tab = Window:MakeTab({
     Name = "dex和spy",
@@ -1155,12 +1140,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Lu
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/wdwahDWGU/DWAHUBUHD/refs/heads/main/WDVHQVEH'))()		
 	end
 })
+			
 else
 ScreenGui:Destroy()
-StarterGui:SetCore("SendNotification", {
-        Title = "密钥错误",
-        Text = "玩家:"..localPlayer.Name.."臭煞笔,腻石补诗奈隆",
-        Duration = 7,
-    })			
     end
 end)
